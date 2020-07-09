@@ -1,0 +1,22 @@
+
+.card-component {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 50px rgb(209, 209, 209);
+}
+.image {
+  height: 200px;
+  background: url("./images/drawers.jpg") top 25% center no-repeat;
+  background-size: 100%;
+}
+.info {
+  padding-top: 1em;
+  font-weight: 500;
+  color: var(--VeryDarkGrayishBlue);
+  font-size: 11px;
+}
+.info p {
+  font-size: 13.5px;
+  color: var(--DesaturatedDarkBlue);
+}

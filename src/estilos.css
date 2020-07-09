@@ -1,0 +1,94 @@
+@import url("./no-foo.css");
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+body {
+  padding-top: 3em;
+  height: 90%;
+  width: 90%;
+  margin: auto auto;
+  font-family: "Manrope", sans-serif;
+}
+.wrapper {
+  padding: 0 35px;
+}
+.wrapper * {
+  border: 1px solid red;
+}
+
+/* 
+footer disable
+*/
+
+
+.foo-card {
+  height: 65px;
+  padding: 0 3em;
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  align-items: center;
+  width: auto;
+}
+.is-hidden {
+  display: none;
+  position: absolute;
+}
+#foo-perfil {
+  border: 1px solid blue;
+  color: var(--VeryDarkGrayishBlue);
+  grid-template-areas: "pic name share-b";
+}
+#foo-perfil .perfil img{
+  grid-area: pic;
+  border-radius: 100%;
+}
+#foo-perfil .info-user{
+  grid-area: name;
+  display: grid;
+  margin-left: -1.4em;
+}
+.name{
+  color:var(--VeryDarkGrayishBlue);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.date{
+  color:var(--GrayishBlue);
+  font-weight: 500;
+  font-size: 1em;
+}
+#foo-share {
+  border: 1px solid red;
+  background-color: var(--VeryDarkGrayishBlue);
+  color: white;
+}
+
+#foo-share .texto-foo{
+  letter-spacing: .4em;
+  color:var(--GrayishBlue);
+  font-weight: 400;
+}
+#foo-share .social img{
+  margin: 0 .6em;
+  height: 1.6em;
+}
+/*.social{
+  grid-area: social;
+  display: flex;
+} */
+
+
+/* @keyframes collapse {
+  from {
+    bottom: 0px;
+    opacity: 1;
+  }
+  to {
+    top: 40px;
+    opacity: 0;
+  }
+} */

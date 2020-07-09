@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card </title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="stylesheet" href="./src/estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;523;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="card-component">
+      <div class="image"></div>
+      <div class="wrapper">
+        <div class="info">
+          <h1 class="title">
+            Shift the overall look and feel by adding these wonderful touches to forniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.
+          </p>
+        </div>
+      </div>
+      <div class="foo-card container-perfil" id="foo-perfil">
+        <div class="perfil">
+          <img src="./src/images/avatar-michelle.jpg" height="45" alt="" />
+        </div>
+        <div class="info-user">
+          <span class="name">Michelle Appleton</span>
+          <span class="date">09 Jul 2020</span>
+        </div>
+        <div class="container-share-info">
+          <img src="./src/images/icon-share-blue.svg" alt="" />
+        </div>
+      </div>
+      <div class="footter-card is-hidden" id="foo-share">
+        <div class=" foo-card foo-share-container active" id="app">
+          <div class="texto-foo">
+            <span>SHARE</span>
+          </div>
+          <div class="social">
+            <img class="logo-face" src="./src/images/icon-facebook.svg" alt="facebook" />
+            <img class="logo-twi" src="./src/images/icon-twitter.svg" alt="twitter" />
+            <img class="logo-pint" src="./src/images/icon-pinterest.svg" alt="pinterest" />
+          </div>
+          <div class="container_share">
+            <img src="./src/images/icon-share.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./src/main.js"></script>
+  </body>
 </html>
