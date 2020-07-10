@@ -25,6 +25,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 39% 61%;
   border-radius: 10px;
+  /* overflow: hidden; */
   overflow: hidden;
   box-shadow: 10px 10px 50px rgb(209, 209, 209);
 }
@@ -35,12 +36,13 @@ footer disable
 
 .foo-card {
   height: 50px;
-  padding: 1em 3em;
+  padding: 1em 2.2em;
   display: grid;
   grid-template-columns: 30% 60% 10%;
   align-items: center;
   width: auto;
-  margin-top: .1em;
+  margin-top: 0.1em;
+  
 }
 .is-hidden {
   position: relative;
@@ -64,6 +66,17 @@ footer disable
     opacity: 1;
   }
 }
+@keyframes open {
+  from {
+    top: 20px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
 #foo-perfil .perfil img {
   grid-area: pic;
   border-radius: 100%;
@@ -95,7 +108,6 @@ footer disable
   align-items: center;
 }
 
-
 #foo-share {
   background-color: var(--VeryDarkGrayishBlue);
   color: white;
@@ -109,7 +121,7 @@ footer disable
   color: var(--GrayishBlue);
   font-weight: 400;
 }
-.social{
+.social {
   display: flex;
   align-items: center;
 }
@@ -144,38 +156,83 @@ footer disable
     display: grid;
     grid: none;
     grid-template-columns: 290px 450px;
+    overflow: visible;
   }
   .conteiner-info {
     height: 100%;
-    
   }
   .image {
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: left 1px center no-repeat;
-    
+    border-radius: 10px 0 0 10px;
   }
 
   .wrapper {
     padding-top: 3em;
     padding-left: 3em;
+    overflow: visible;
   }
   .info {
     width: 350px;
   }
   .info .title {
     padding-top: 0em;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     font-size: 1.8em;
   }
   .info p {
     font-size: 1.2em;
   }
-  .footer{
+  .footer {
     margin-top: 1.4em;
   }
   .foo-card {
-    padding: 1em 3em; 
+    padding: 1em 3em;
+  }
+  .modal {
+    border: 1px solid var(--VeryDarkGrayishBlue);
+    background-color: var(--VeryDarkGrayishBlue);
+    border-radius: 10px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    margin-top: -4em;
+  }
+  .modal div{
+    position: relative;
+
+  }
+  .social-share{
+    margin-top: -4em;
+    color: var(--Light-Grayish-Blue);
+    display: grid;
+    grid-template-columns: 20px 60px; 
+    grid-template-areas: "share-1 social-1";
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+  }
+  .social-share{
+    grid-area: share-1;
+    justify-content: start;
+    letter-spacing: .4em;
+    font-size: .8em;
+  }
+  .social-share{
+    grid-area: social-1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--VeryDarkGrayishBlue);
+    display: block;
+    margin: auto;
+    margin-top: 43px;
+    transform: rotate(45deg);
   }
 }
