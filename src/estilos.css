@@ -38,7 +38,6 @@ footer disable
   position: absolute;
 }
 #foo-perfil {
-  border: 1px solid blue;
   color: var(--VeryDarkGrayishBlue);
   grid-template-areas: "pic name share-b";
 }
