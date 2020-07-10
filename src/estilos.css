@@ -40,6 +40,7 @@ footer disable
   grid-template-columns: 30% 60% 10%;
   align-items: center;
   width: auto;
+  margin-top: .1em;
 }
 .is-hidden {
   position: relative;
@@ -108,10 +109,15 @@ footer disable
   color: var(--GrayishBlue);
   font-weight: 400;
 }
+.social{
+  display: flex;
+  align-items: center;
+}
 #foo-share .social img {
   margin: 0 0.6em;
-  height: 1.8em;
-  width: 1.8em;
+  height: 1.6em;
+  width: 1.6em;
+  align-items: center;
 }
 #share-blue {
   background-color: var(--DesaturatedDarkBlue);
