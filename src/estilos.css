@@ -14,12 +14,12 @@ body {
   font-family: "Manrope", sans-serif;
 }
 .wrapper {
-  padding: 0 35px;
-}
-.wrapper * {
-  border: 1px solid red;
+  padding: 1px 35px;
 }
 
+.card-component{
+  height: 500px;
+}
 /* 
 footer disable
 */
@@ -62,7 +62,7 @@ footer disable
   font-size: 1em;
 }
 #foo-share {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   background-color: var(--VeryDarkGrayishBlue);
   color: white;
 }
