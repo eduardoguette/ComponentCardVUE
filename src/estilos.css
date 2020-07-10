@@ -7,8 +7,12 @@
   font-size: 13px;
 }
 body {
+  padding-top: 10%;
   font-family: "Manrope", sans-serif;
   background-color: var(--Light-Grayish-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper {
   padding: 1px 30px;
@@ -20,9 +24,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 39% 61%;
-
   border-radius: 10px;
-  /* overflow: hidden; */
+  overflow: hidden;
   box-shadow: 10px 10px 50px rgb(209, 209, 209);
 }
 
@@ -91,9 +94,8 @@ footer disable
   align-items: center;
 }
 
-/* blue  */
+
 #foo-share {
-  /* border: 1px solid red; */
   background-color: var(--VeryDarkGrayishBlue);
   color: white;
   position: relative;
@@ -122,11 +124,6 @@ footer disable
   align-items: center;
 }
 
-/*.social{
-  grid-area: social;
-  display: flex;
-} */
-
 @media screen and (min-width: 720px) {
   .info,
   .info > * {
@@ -148,7 +145,9 @@ footer disable
   }
   .image {
     height: 100%;
+    width: 100%;
     background-size: cover;
+    background-position: left 1px center no-repeat;
     
   }
 
@@ -172,6 +171,5 @@ footer disable
   }
   .foo-card {
     padding: 1em 3em; 
-    border: 1px solid red;
   }
 }
