@@ -42,7 +42,6 @@ footer disable
   align-items: center;
   width: auto;
   margin-top: 0.1em;
-  
 }
 .is-hidden {
   position: relative;
@@ -97,7 +96,9 @@ footer disable
   font-weight: 500;
   font-size: 1em;
 }
-.container-share-info {
+
+.arrowshare {
+  background: url("./images/icon-share-blue.svg") center center no-repeat;
   background-color: var(--Light-Grayish-Blue);
   text-align: center;
   height: 30px;
@@ -131,7 +132,9 @@ footer disable
   width: 1.6em;
   align-items: center;
 }
-#share-blue {
+.arrowshare-b {
+  background: url("./images/icon-share.svg") center center no-repeat;
+
   background-color: var(--DesaturatedDarkBlue);
   text-align: center;
   height: 30px;
@@ -197,33 +200,37 @@ footer disable
     border-radius: 10px;
     position: absolute;
     height: 50px;
-    width: 200px;
-    margin-top: -4em;
+    width: 250px;
+    margin-top: -8em;
+    margin-left: -8.5em;
   }
-  .modal div{
-    position: relative;
-
-  }
-  .social-share{
-    margin-top: -4em;
-    color: var(--Light-Grayish-Blue);
-    display: grid;
-    grid-template-columns: 20px 60px; 
-    grid-template-areas: "share-1 social-1";
-    justify-content: center;
-    align-items: center;
-    padding: 0 2em;
-  }
-  .social-share{
-    grid-area: share-1;
-    justify-content: start;
-    letter-spacing: .4em;
-    font-size: .8em;
-  }
-  .social-share{
-    grid-area: social-1;
+  .social-share {
+    margin-top: -3.3em;
+    color: var(--GrayishBlue);
+    padding: 0 2.85em;
+    letter-spacing: 0.5em;
+    font-weight: 500;
+    font-size: 1em;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+  }
+  div[class="arrowshare active-click"] {
+    background: url("./images/icon-share.svg") center center no-repeat;
+
+    background-color: var(--DesaturatedDarkBlue);
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    align-items: center;
+  }
+  .social-share > img {
+    margin-left: 1.1em;
+  }
+  .modal div {
+    position: relative;
   }
   .modal::before {
     content: "";
