@@ -1,4 +1,4 @@
-# myComponentCardVUE
+# ComponentCardVUE
 ## test here https://eduardoguette.github.io/ComponentCardVanilla/
 ### Version Mobile
 ![](https://github.com/eduardoguette/ComponentCardVanilla/blob/master/card.png)
