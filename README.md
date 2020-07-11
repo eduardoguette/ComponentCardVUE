@@ -1,2 +1,2 @@
 # myComponentCardVUE
-## test here https://eduardoguette.github.io/ComponentCardVUE/
+## test here https://eduardoguette.github.io/ComponentCardVanilla/
